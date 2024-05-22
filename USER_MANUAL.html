@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Organizer Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Class Organizer</h1>
+        <p>Programmed by Tom Zhang</p>
+    </header>
+
+    <section id="purpose">
+        <h2>Purpose</h2>
+        <p>This program organizes a text file into an Excel sheet for better visualization of the class schedule.</p>
+    </section>
+
+    <section id="requirements">
+        <h2>Requirements</h2>
+        <p>The program can only be run on a Windows system. In the folder where the executable file is, there must be a folder named "Input" (cannot be renamed), and it should contain the following files:</p>
+        <ul>
+            <li>classes.txt (mandatory) (can be renamed as long as there is "classes" in the name)</li>
+            <li>departments.txt (mandatory) (cannot be renamed)</li>
+            <li>heights.txt (mandatory) (cannot be renamed)</li>
+            <li>class values.xlsx (optional) (cannot be renamed)</li>
+        </ul>
+        <p>Note: there cannot be multiple classes files.</p>
+    </section>
+</body>
+<section id="instructions">
+    <h2>Instructions</h2>
+    <ol>
+        <li>Make sure all requirements are met.</li>
+        <li>If there are other schedule Excel files open on the computer, close them.</li>
+        <li>Double click on "organize.exe".
+            <p>Note: When the program is used for the first time, a window will show up saying the software is blocked. Click on "More Details", then on "Run Anyway".</p>
+        </li>
+        <li>"Command Prompt" will show up containing output from the program, read it to determine if the program has run successfully, then press "Enter".</li>
+        <li>If the program has run successfully, go to the Output folder to look for the schedule Excel sheet.</li>
+    </ol>
+</section>
+
+<section id="file-notes">
+    <h2>File Descriptions</h2>
+    <h3>classes.txt</h3>
+    <p>This is the text file containing classes that will be put onto the Excel sheet. There must be 3 columns "Course", "Term", and "Schedule" (in this order). Additional columns are ignored. Check classes.txt in the "sample files" folder for examples.</p>
+
+    <h3>departments.txt</h3>
+    <p>This is the text file that assigns each class to a department. You may modify this file to add or remove departments, change department names, or add new classes to a department. The format of this file is a department name, followed by a colon, then space-separated uppercase class codes. Check departments.txt in the "sample files" folder for examples.</p>
+
+    <h3>heights.txt</h3>
+    <p>This is the text file specifying how many rows each period and lunch will take up. You may modify this file if the heights are too tall or too short. Check heights.txt in the "sample files" folder for examples.</p>
+
+    <h3>class values.xlsx</h3>
+    <p>This file specifies the values added to the "Totals" section of the Excel file for each class. You can add decimal values, values to different grades, or remove existing values. The format includes a "Classes" column for the class code, and a "Semester" column for specifying the semesters applicable (e.g., S1, S2, FY). Check class values.xlsx in the "sample files" folder for examples.</p>
+    
+    <h3>schedule.xlsx</h3>
+    <p>This is the Excel sheet containing the organized class schedule. Classes are color-coded: purple for group classes, pink for full year day 1, orange for full year day 2, and red for full year day 1-2. Check schedule.xlsx in the "sample files" folder for examples.</p>
+</section>
+</body>
+</html>
