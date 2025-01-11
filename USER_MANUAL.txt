@@ -1,0 +1,69 @@
+Class Organizer
+Programmed by Tom Zhang
+
+Purpose:
+This program organizes a text file into an Excel sheet for better visualization of the class schedule.
+
+Requirements:
+- The program can only be run on a Windows system.
+- In the folder where the executable file is, there must be a folder named "Input" (cannot be renamed), and it should contain 4 files:
+        1. classes.txt (mandatory) (can be renamed as long as there is "classes" in the name)
+        2. departments.txt (mandatory) (cannot be renamed)
+        3. heights.txt (mandatory) (cannot be renamed)
+        4. class values.xlsx (optional) (cannot be renamed)
+  note: there cannot be multiple classes files
+
+Instructions:
+1. Make sure all requirements are met.
+2. If there are other schedule Excel files open on the computer, close them.
+3. Double click on "organize.exe".
+  note: when the program is used for the first time, a window will show up saying the software is blocked. Click on "More Details", then on "Run Anyway"
+4. "Command Prompt" will show up containing output from the program, read it to determine if the program has run successfully, then press "Enter".
+5. If the program has run successfully, go to the Output folder to look for the schedule Excel sheet.
+
+Here are some notes about the files in the folder:
+You may read it for information about how to set up certain files.
+
+********* classes.txt *********
+- This is the text file containing classes that will be put onto the Excel sheet.
+- There must be 3 columns "Course", "Term", and "Schedule" (in this order).
+- Additional columns are ignored.
+- Check classes.txt in "sample files" folder for examples.
+
+********* departments.txt *********
+- This is the text file that assigns each class to a department.
+- You may modify this file if you want to:
+        - add departments
+        - remove departments
+        - change department names
+        - add new classes to a department
+        - add the department for a class
+- There must be the department "FRIMM" if there are any French Immersion classes.
+- The format of this file is department name (name it as you prefer), colon, followed by space seperated uppercase class codes that show up as the first 3 letters in the classes file.
+- Check departments.txt in "sample files" folder for examples.
+
+********* heights.txt *********
+- This is the text file specifying how many rows each period and lunch will take up.
+- You may modify this file if the heights are too tall or too short.
+- Check heights.txt in "sample files" folder for examples.
+
+********* class values.xlsx *********
+- This is the file specifying the values added to the "Totals" section of the Excel file for each class.
+- You may modify this file if you want to add decimal values, add values to different grades, or remove existing values.
+- To add a class, enter the class code that shows up in the classes file to the Classes column, dropping any parts with "grp" and 3-digit codes.
+- Then, enter the values you want for each grade.
+- The Semester column specifies if you only want certain semesters to apply the rule.
+- Enter "S1" for semester 1, "S2" for semester 2, "FY" for full year.
+- Seperate by commas.
+- For example, if you want semester 1 and full year classes to apply the rule, enter "S1, FY".
+- Check class values.xlsx in "sample files" folder for examples.
+
+********* schedule.xlsx *********
+- This is the Excel sheet containing the organized class schedule.
+- The name of this file is according to the name of the classes file.
+- For example, if the classes file is named "classes June 24.txt", this file will be named "schedule June 24.xlsx".
+- Classes in purple are group classes.
+- Classes in pink are full year day 1 classes.
+- Classes in orange are full year day 2 classes.
+- Classes in red are full year day 1-2 classes.
+- Check schedule.xlsx in "sample files" folder for examples.
