@@ -4,6 +4,12 @@
 ## Purpose
 This program organizes a text file into an Excel sheet for better visualization of the class schedule.
 
+### Example Output
+Below is an example of how the organized schedule looks in Excel:
+
+![Example Schedule Screenshot](schedule%20screenshot.png)
+*Example of a generated class schedule*
+
 ## Requirements
 - Windows operating system
 - An "Input" folder (name cannot be changed) containing:
